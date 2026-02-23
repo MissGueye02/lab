@@ -1,0 +1,21 @@
+name: Testing github workflows
+
+on: push
+
+jobs: 
+  integration-continue:
+    name: Démonstration CI 
+    runs-on: ubuntu-latest
+
+    env:
+      STEP1: "Le code vient d'être poussé sur GITHUB"
+
+    steps:
+      - run: echo "Initialisation"
+      - run: echo "Récupération du code "
+     - run: echo "Build"
+      - run: echo "Tests"
+      - run: echo "Packaging"
+      -run: echo "Fin du pipeline"
+      -run: echo "complete job"
+     
